@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$font-family: Poppins, sans-serif;
+$light: 100;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+
+$heading-font-size: 29px;
+$heading-small-font-size: 24px;
+$heading-xs-font-size: 21px;
+$body-text-size: 14px;
+$read-more-button-size:15px;
+$hero-button-font-size: 1em;
+$footer-text: 0.8em;
+
+h2{
+    font-size: $heading-font-size;
+    color: $blue-color;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        background: #677077; 
+        top: 140%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.title-left{
+    text-align: left;
+    &:after{
+        left: 0px;
+        transform: translateX(0px);
+    }
+}
+.title{
+    font-size: $heading-xs-font-size;
+    color: $blue-color;
+    font-weight: $medium;
+    line-height: 25px;
+}
+%body-text{
+    font-size: 0.9em;
+    color: $body-font-color;
+}
+%text-block{
+    padding-top: 30px;
+    p{
+        color: #656565;
+        font-size:$body-text-size;
+    }
+}
+
+
