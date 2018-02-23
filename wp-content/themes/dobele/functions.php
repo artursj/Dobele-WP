@@ -108,12 +108,20 @@ function team_member_fields() {
   $email = $custom["email"][0];
   
   ?>
-  <label>Occupation</label>
-  <input type="text" name="occupation" value="<?php echo  $occupation; ?>"/></br>
-  <label>Phone</label>
-  <input type="text" name="phone" value="<?php echo $phone; ?>"/></br>
-  <label>E-mail</label>
-  <input type="text" name="email" value="<?php echo $email; ?>"/></br>
+  <table class="form-table"> 
+    <tr>
+      <th><label>Occupation</label></th>
+      <td><input type="text" name="occupation" value="<?php echo  $occupation; ?>"/></td>
+    </tr>
+    <tr>
+      <th><label>Phone</label></th>
+      <td><input type="text" name="phone" value="<?php echo $phone; ?>"/></td>
+    </tr>
+    <tr>
+      <th><label>E-mail</label></th>
+      <td><input type="text" name="email" value="<?php echo $email; ?>"/></td>
+    </tr>
+  </table>
   <?php
 }
 
@@ -220,10 +228,16 @@ function googlemap_fields() {
   $longitude = $custom["longitude"][0];
   
   ?>
-  <label>Latitude</label>
-  <input type="text" name="latitude" value="<?php echo  $latitude; ?>"/></br>
-  <label>longitude</label>
-  <input type="text" name="longitude" value="<?php echo $longitude; ?>"/></br>
+  <table class="form-table"> 
+    <tr>
+      <th><label>Latitude</label></th>
+      <td><input type="text" name="latitude" value="<?php echo  $latitude; ?>"/></td>
+    </tr>
+    <tr>
+      <th><label>longitude</label></th>
+      <td><input type="text" name="longitude" value="<?php echo $longitude; ?>"/></td>
+    </tr>
+  </table>
   <?php
 }
 
