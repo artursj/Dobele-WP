@@ -16,6 +16,7 @@ while ( have_posts() ) : the_post();
 
 endwhile; // End of the loop.
 ?>
+
 <div class="second-section section">
     <div class="section-content">
         <div class="row">
