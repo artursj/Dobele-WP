@@ -16,7 +16,15 @@ while ( have_posts() ) : the_post();
 
 endwhile; // End of the loop.
 ?>
-<?php get_template_part( 'partials/googlemap'); ?>
+<div class="second-section section">
+    <div class="section-content">
+        <div class="row">
+            <?php get_template_part( 'partials/team'); ?>
+            <?php get_template_part( 'partials/contact-details'); ?>
+        </div>
+    </div>
+</div>
+<?php do_shortcode("[google_map id='111']"); ?>
 <?php get_template_part( 'partials/contact-us'); ?>
 
 
